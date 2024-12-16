@@ -74,15 +74,14 @@ https://lobby-redeems-challenge.netlify.app
 
 ## Próximos passos
 
-Baseado nas premissas citadas: (57%)
+Baseado nas premissas citadas: (100%)
 
 - [x] Construir uma estrutura de banco condizente (100%)
-- [] Desenvolver as operações da respectiva API (71%)
+- [x] Desenvolver as operações da respectiva API (100%)
   - [x] A aplicação base possui as rotas API para consulta de páginas de resgates e criação de resgates.
   - [x] O resgate obrigatoriamente deve estar associado a uma página de resgate.
   - [x] Páginas de resgate podem ficar inacessíveis para novos resgates.
   - [x] Páginas de resgate podem (ou não) ter variações de tamanhos.
   - [x] Páginas de resgate podem (ou não) ter perguntas extras.
   - [x] O mesmo usuário não deve conseguir realizar novos resgates antes de ter o resgate anterior aprovado ou reprovado.
-  - [] Criar o seed inicial do banco com dados do happy path
-- [] Adequar os testes já implementados (0%)
+- [x] Adequar os testes já implementados (100%)
