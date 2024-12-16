@@ -4,7 +4,7 @@ module Api
   module V1
     class RedeemsController < ApiController
       def create
-        result = RedeemService.create_redeem(redeem_params)
+        result = RedeemsService.create_redeem(redeem_params)
 
         if result[:error]
           render json: { error: result[:error] }, status: result[:status]
@@ -16,7 +16,11 @@ module Api
       private
 
       def redeem_params
-        params.require(:redeem).permit(:redeem_page_id, :user_id, :data)
+        params.require(:redeem).permit(
+          :redeem_page_id,
+          :user_id,
+          data: [:cep, :rua, :numero, :bairro, :cidade, :estado, :complemento, :pais, :name, :cpf, :email]
+        )
       end
     end
   end

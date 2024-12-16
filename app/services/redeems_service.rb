@@ -1,4 +1,4 @@
-class RedeemService
+class RedeemsService
   def self.create_redeem(redeem_params)
     redeem_page = RedeemPage.find_by(id: redeem_params[:redeem_page_id], is_active: true)
     return { status: :not_found, error: 'Redeem page not found or not active.' } if redeem_page.nil?
